@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "check": "^1.0.0",
     "cors": "^2.8.5",
     "express": "^4.17.2",
+    "health": "^0.3.0",
     "healthcheck": "^0.1.3"
   }
 }

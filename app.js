@@ -13,7 +13,7 @@ app.use(function (req, res, next) {
    next();
 });
 
-app.use('/healthcheck', require('./routes/healthcheck.routes'));
+app.use('./healthcheck', require('./routes/healthcheck.routes'));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cors())
@@ -51,6 +51,7 @@ app.post('/authorize', (req, res) => {
       res.status(200).send({"STATUS":"FAILURE"})
    }
 });
+
 app.listen(PORT , ()=>{
-   console.log(`STARTED LISTENING ON PORT ${PORT}`)
+     console.log(`STARTED LISTENING ON PORT ${PORT}`)
 });
